@@ -1,0 +1,128 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Todolist</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="icon" href="https://logowiki.net/uploads/logo/u/university-of-cambridge-2.svg">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="filter-div">
+        <div class="navbarDiv">
+            <nav id="navbar">
+                <div>
+                    <a href="sayyidazizii.github.io">
+                        <img src="logo-web.png"
+                            alt="Cambridge resmi vardı bulamamış işte .d">
+                    </a>
+                </div>
+                <div id="team7">Sayyid Syafiq</div>
+            </nav>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container" id="container">
+
+            <div class="filter-div">
+
+                <div class="field inputField">
+
+                    <form action="javascript:void(0);" id="form">
+                        <label class="label" id="formLabel">Enter your activity 😉</label>
+                        <div class="control inputHTMLdiv">
+                            <div id="inputDiv">
+                                <input class="input inputHTML" id="inputHTML" type="text" placeholder="Activity">
+                            </div>
+                            
+                            <div class="inputRight">
+                                <div class="select selectDiv">
+                                    <select id="selectStart">
+                                        <option>Start Time</option>
+                                    </select>
+                                </div>
+    
+                                <div class="vertical"></div>
+    
+                                <div class="select selectDiv">
+                                    <select id="selectEnd">
+                                        <option>End Time</option>
+                                    </select>
+                                </div>
+                        </div>
+                        <div>
+                            <button class="button is-link button-card" type="submit" id="submitButton">Show</button>
+                        </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="notification is-danger" id="alert">
+                    <button class="delete" id="delete"></button>
+                    <div id="alertWord">This is not a third unit word 🙄</div>
+                </div>
+
+            </div>
+
+            <div id="popup">
+
+                <div class="card">
+                    <header class="card-header">
+                        <p class="card-header-title" id="popupBaslık">
+                            Component
+                        </p>
+                    </header>
+                    <div class="card-content">
+                        <div class="content" id="popupwwd">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+                            <br>
+                            <time datetime="2016-1-1" id="popuptime">11:09 PM - 1 Jan 2021</time>
+                        </div>
+                    </div>
+                    <footer class="card-footer">
+                        <a href="#" class="card-footer-item" id="popupDelete">Delete</a>
+                        <a href="#" class="card-footer-item" id="popupEdit">Edit</a>
+                        <a href="#" class="card-footer-item" id="popupClose">Close</a>
+                    </footer>
+                </div>
+            </div>
+
+            <div class="filter-div">
+                <div id="todolar">
+
+                    <ul id="todoul">
+                        
+                    </ul>
+
+                </div>
+
+                <div id="button-table">
+                    <button class="button is-warning" id="button-create">Create Table</button>
+                    <button class="button is-danger button-table-class" id="button-delete">Delete Table</button>
+                </div>
+
+                <table class="table table is-bordered is-striped is-narrow is-hoverable is-fullwidth" id="table">
+
+                </table>
+
+            </div>
+
+        </div>
+
+
+
+    </section>
+    <script src="main.js"></script>
+</body>
+
+</html>
